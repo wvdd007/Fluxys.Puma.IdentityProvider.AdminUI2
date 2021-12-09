@@ -47,7 +47,7 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
 
             if (isDevelopment)
             {
-                configurationBuilder.AddUserSecrets<Startup>();
+                configurationBuilder.AddUserSecrets<Startup>(optional: true);
             }
 
             var configuration = configurationBuilder.Build();
@@ -74,7 +74,7 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
 
                      if (env.IsDevelopment())
                      {
-                         configApp.AddUserSecrets<Startup>();
+                         configApp.AddUserSecrets<Startup>(optional: true);
                      }
 
                      configurationRoot.AddAzureKeyVaultConfiguration(configApp);
