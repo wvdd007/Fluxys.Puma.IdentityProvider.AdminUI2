@@ -26,12 +26,12 @@ services:
     container_name: skoruba-duende-identityserver-admin
     environment:
       - VIRTUAL_HOST=admin.skoruba.local
-      - 'ConnectionStrings__ConfigurationDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__PersistedGrantDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__IdentityDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__AdminLogDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__AdminAuditLogDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__DataProtectionDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__ConfigurationDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__PersistedGrantDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__IdentityDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__AdminLogDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__AdminAuditLogDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__DataProtectionDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
       - 'AdminConfiguration__IdentityAdminBaseUrl=https://admin.skoruba.local'
       - 'AdminConfiguration__IdentityAdminRedirectUri=https://admin.skoruba.local/signin-oidc'
       - 'AdminConfiguration__IdentityServerBaseUrl=https://sts.skoruba.local'
@@ -42,7 +42,7 @@ services:
       - 'IdentityServerData__Clients__0__PostLogoutRedirectUris__0=https://admin.skoruba.local/signout-callback-oidc'
       - 'IdentityServerData__Clients__0__AllowedCorsOrigins__0=https://admin.skoruba.local'
       - 'IdentityServerData__Clients__1__RedirectUris__0=https://admin-api.skoruba.local/swagger/oauth2-redirect.html'
-      - 'Serilog__WriteTo__1__Args__connectionString=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'Serilog__WriteTo__1__Args__connectionString=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
       - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
     command: dotnet Fluxys.Puma.IdentityProvider.Admin.dll /seed
@@ -67,12 +67,12 @@ services:
       - AdminApiConfiguration__RequireHttpsMetadata=false
       - 'AdminApiConfiguration__ApiBaseUrl=https://admin-api.skoruba.local'
       - 'AdminApiConfiguration__IdentityServerBaseUrl=https://sts.skoruba.local'
-      - 'ConnectionStrings__ConfigurationDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__PersistedGrantDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__IdentityDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__AdminLogDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__AdminAuditLogDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__DataProtectionDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__ConfigurationDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__PersistedGrantDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__IdentityDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__AdminLogDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__AdminAuditLogDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__DataProtectionDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
       - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
     volumes:
@@ -88,14 +88,24 @@ services:
     container_name: skoruba-duende-identityserver-sts-identity
     environment:
       - VIRTUAL_HOST=sts.skoruba.local
-      - 'ConnectionStrings__ConfigurationDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__PersistedGrantDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__IdentityDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
-      - 'ConnectionStrings__DataProtectionDbConnection=data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__ConfigurationDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__PersistedGrantDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__IdentityDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
+      - 'ConnectionStrings__DataProtectionDbConnection=data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true'
       - 'AdminConfiguration__IdentityAdminBaseUrl=https://admin.skoruba.local'
       - 'AdvancedConfiguration__IssuerUri=https://sts.skoruba.local'
       - DockerConfiguration__UpdateCaCertificate=true
       - ASPNETCORE_ENVIRONMENT=Development
+    depends_on:
+      - db
+      - testdatabase
+    volumes:
+      - './shared/serilog.json:/app/serilog.json'
+      - './shared/nginx/certs/cacerts.crt:/usr/local/share/ca-certificates/cacerts.crt'
+    networks:
+      identityserverui:
+        aliases:
+          - sts.skoruba.local
   testdatabase:
     image: '${DOCKER_REGISTRY-}testdatabase'
     build:

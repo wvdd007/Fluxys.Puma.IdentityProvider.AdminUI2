@@ -9,7 +9,7 @@ namespace TestDatabase
 {
     internal class Program
     {
-        const string ConnectionString  = "data source=192.168.117.177,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true";
+        const string ConnectionString  = "data source=172.18.5.113,14330;initial catalog=PUMA;User Id=sa;Password=G@sFl0wDev;MultipleActiveResultSets=true";
 
         static async Task Main(string[] args)
         {

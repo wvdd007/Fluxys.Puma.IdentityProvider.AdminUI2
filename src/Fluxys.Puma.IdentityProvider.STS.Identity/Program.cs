@@ -1,10 +1,12 @@
 ﻿using System;
 using System.IO;
+using System.Linq;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Serilog;
 using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
+// ReSharper disable LocalizableElement
 
 namespace Fluxys.Puma.IdentityProvider.STS.Identity
 {
@@ -12,16 +14,21 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine($"Starting program with arguments : [{string.Join(',', args.Select(a=>$"'{a}'"))}]");
             var configuration = GetConfiguration(args);
 
+            Console.WriteLine("Retrieved configuration.");
             Log.Logger = new LoggerConfiguration()
                 .ReadFrom.Configuration(configuration)
                 .CreateLogger();
+            Console.WriteLine("Logger created.");
             try
             {
                 DockerHelpers.ApplyDockerConfiguration(configuration);
+                Console.WriteLine("Docker configuration applied.");
 
                 var host = CreateHostBuilder(args).Build();
+                Console.WriteLine("Host has been built.");
                 host.Run();
             }
             catch (Exception ex)

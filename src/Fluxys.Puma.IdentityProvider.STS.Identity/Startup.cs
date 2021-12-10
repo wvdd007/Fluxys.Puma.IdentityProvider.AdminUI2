@@ -12,6 +12,7 @@ using Skoruba.Duende.IdentityServer.Shared.Configuration.Helpers;
 using Fluxys.Puma.IdentityProvider.STS.Identity.Configuration;
 using Fluxys.Puma.IdentityProvider.STS.Identity.Configuration.Constants;
 using Fluxys.Puma.IdentityProvider.STS.Identity.Configuration.Interfaces;
+using Fluxys.Puma.IdentityProvider.STS.Identity.Custom;
 using Fluxys.Puma.IdentityProvider.STS.Identity.Helpers;
 
 namespace Fluxys.Puma.IdentityProvider.STS.Identity
@@ -55,10 +56,13 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
             RegisterAuthorization(services);
 
             services.AddIdSHealthChecks<IdentityServerConfigurationDbContext, IdentityServerPersistedGrantDbContext, AdminIdentityDbContext, IdentityServerDataProtectionDbContext>(Configuration);
+
+            Console.WriteLine($"Registrations done: '{services.Count}'.");
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            app.ConfigureExceptionHandler();
             app.UseCookiePolicy();
 
             if (env.IsDevelopment())
@@ -70,7 +74,9 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
                 app.UseHsts();
             }
 
-            app.UsePathBase(Configuration.GetValue<string>("BasePath"));
+            var pathString = Configuration.GetValue<string>("BasePath");
+            Console.WriteLine($"Using base path for application: '{pathString}'.");
+            app.UsePathBase(pathString);
 
             // Add custom security headers
             app.UseSecurityHeaders(Configuration);

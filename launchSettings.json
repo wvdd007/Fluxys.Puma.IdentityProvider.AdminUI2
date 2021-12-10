@@ -1,0 +1,16 @@
+{
+  "profiles": {
+    "Docker Compose": {
+      "commandName": "DockerCompose",
+      "commandVersion": "1.0",
+      "serviceActions": {
+        "db": "StartWithoutDebugging",
+        "fluxys.puma.identityprovider.admin": "StartWithoutDebugging",
+        "fluxys.puma.identityprovider.admin.api": "StartWithoutDebugging",
+        "fluxys.puma.identityprovider.sts.identity": "StartDebugging",
+        "nginx-proxy": "StartWithoutDebugging",
+        "testdatabase": "StartWithoutDebugging"
+      }
+    }
+  }
+}
