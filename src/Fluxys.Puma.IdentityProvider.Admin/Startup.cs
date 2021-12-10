@@ -47,7 +47,6 @@ namespace Fluxys.Puma.IdentityProvider.Admin
 
             // Add email senders which is currently setup for SendGrid and SMTP
             services.AddEmailSenders(Configuration);
-
             
         }
 

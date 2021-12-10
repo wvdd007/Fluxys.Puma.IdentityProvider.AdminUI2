@@ -5,8 +5,8 @@ using System;
 using System.Reflection;
 using Skoruba.Duende.IdentityServer.Admin.EntityFramework.Configuration.Configuration;
 using SqlMigrationAssembly = Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer.Helpers.MigrationAssembly;
-using MySqlMigrationAssembly = Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql.Helpers.MigrationAssembly;
-using PostgreSQLMigrationAssembly = Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL.Helpers.MigrationAssembly;
+//using MySqlMigrationAssembly = Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql.Helpers.MigrationAssembly;
+//using PostgreSQLMigrationAssembly = Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL.Helpers.MigrationAssembly;
 
 namespace Fluxys.Puma.IdentityProvider.Admin.Configuration.Database
 {
@@ -17,10 +17,10 @@ namespace Fluxys.Puma.IdentityProvider.Admin.Configuration.Database
             return databaseProvider.ProviderType switch
             {
                 DatabaseProviderType.SqlServer => typeof(SqlMigrationAssembly).GetTypeInfo().Assembly.GetName().Name,
-                DatabaseProviderType.PostgreSQL => typeof(PostgreSQLMigrationAssembly).GetTypeInfo()
-                    .Assembly.GetName()
-                    .Name,
-                DatabaseProviderType.MySql => typeof(MySqlMigrationAssembly).GetTypeInfo().Assembly.GetName().Name,
+                //DatabaseProviderType.PostgreSQL => typeof(PostgreSQLMigrationAssembly).GetTypeInfo()
+                //    .Assembly.GetName()
+                //    .Name,
+                //DatabaseProviderType.MySql => typeof(MySqlMigrationAssembly).GetTypeInfo().Assembly.GetName().Name,
                 _ => throw new ArgumentOutOfRangeException()
             };
         }

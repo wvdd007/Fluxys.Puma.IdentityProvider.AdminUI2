@@ -15,10 +15,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvide
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvider.Admin.EntityFramework.Shared", "src\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.Shared\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.Shared.csproj", "{7FB7C752-C5CA-4E45-85D4-0B017FA13430}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql", "src\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql.csproj", "{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL", "src\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL.csproj", "{FD50000E-ED52-4D22-B79E-D25B3FA59F08}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer", "src\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer.csproj", "{F27642D4-FB77-46BB-8BAC-79DDD308885C}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Fluxys.Puma.IdentityProvider.Shared", "src\Fluxys.Puma.IdentityProvider.Shared\Fluxys.Puma.IdentityProvider.Shared.csproj", "{877DFDE3-1E33-40E2-B403-0ABA6C40F4AE}"
@@ -95,30 +91,6 @@ Global
 		{7FB7C752-C5CA-4E45-85D4-0B017FA13430}.Release|x64.Build.0 = Release|Any CPU
 		{7FB7C752-C5CA-4E45-85D4-0B017FA13430}.Release|x86.ActiveCfg = Release|Any CPU
 		{7FB7C752-C5CA-4E45-85D4-0B017FA13430}.Release|x86.Build.0 = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|x64.Build.0 = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Debug|x86.Build.0 = Debug|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|x64.ActiveCfg = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|x64.Build.0 = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|x86.ActiveCfg = Release|Any CPU
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8}.Release|x86.Build.0 = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|x64.Build.0 = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Debug|x86.Build.0 = Debug|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|x64.ActiveCfg = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|x64.Build.0 = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|x86.ActiveCfg = Release|Any CPU
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08}.Release|x86.Build.0 = Release|Any CPU
 		{F27642D4-FB77-46BB-8BAC-79DDD308885C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{F27642D4-FB77-46BB-8BAC-79DDD308885C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F27642D4-FB77-46BB-8BAC-79DDD308885C}.Debug|x64.ActiveCfg = Debug|Any CPU
@@ -164,8 +136,6 @@ Global
 		{F2D80DDF-9E2F-4504-9290-B54A3468BC04} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
 		{2FF06C3D-0361-4904-878D-15368C6EB539} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
 		{7FB7C752-C5CA-4E45-85D4-0B017FA13430} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
-		{DFB05E75-AC2F-432D-B9C5-A1726EFE27B8} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
-		{FD50000E-ED52-4D22-B79E-D25B3FA59F08} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
 		{F27642D4-FB77-46BB-8BAC-79DDD308885C} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
 		{877DFDE3-1E33-40E2-B403-0ABA6C40F4AE} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}
 		{8EDE8496-8A56-44F0-9726-4C05B5C7BA9B} = {640FCC5C-53FA-41C6-BC98-0F470380BFD5}

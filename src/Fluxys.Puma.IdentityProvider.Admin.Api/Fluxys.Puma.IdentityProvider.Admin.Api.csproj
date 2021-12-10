@@ -50,8 +50,6 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.MySql.csproj" />
-        <ProjectReference Include="..\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.PostgreSQL.csproj" />
         <ProjectReference Include="..\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.Shared\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.Shared.csproj" />
         <ProjectReference Include="..\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer\Fluxys.Puma.IdentityProvider.Admin.EntityFramework.SqlServer.csproj" />
         <ProjectReference Include="..\Fluxys.Puma.IdentityProvider.Shared\Fluxys.Puma.IdentityProvider.Shared.csproj" />

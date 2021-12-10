@@ -21,7 +21,8 @@ namespace Fluxys.Puma.IdentityProvider.STS.Identity
             {
                 DockerHelpers.ApplyDockerConfiguration(configuration);
 
-                CreateHostBuilder(args).Build().Run();
+                var host = CreateHostBuilder(args).Build();
+                host.Run();
             }
             catch (Exception ex)
             {
