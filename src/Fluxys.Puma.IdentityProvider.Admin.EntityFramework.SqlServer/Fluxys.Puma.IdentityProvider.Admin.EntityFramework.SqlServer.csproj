@@ -12,12 +12,6 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Compile Remove="Migrations\IdentityServerConfiguration\20191119163952_DbInit.cs" />
-      <Compile Remove="Migrations\IdentityServerConfiguration\20191119163952_DbInit.Designer.cs" />
-      <Compile Remove="Migrations\IdentityServerConfiguration\20201030101938_UpdateIdentityServerToVersion4.cs" />
-      <Compile Remove="Migrations\IdentityServerConfiguration\20201030101938_UpdateIdentityServerToVersion4.Designer.cs" />
-      <Compile Remove="Migrations\IdentityServerConfiguration\20210310151745_AddRequireResourceIndicator.cs" />
-      <Compile Remove="Migrations\IdentityServerConfiguration\20210310151745_AddRequireResourceIndicator.Designer.cs" />
       <Compile Remove="Migrations\IdentityServerGrants\20191119164007_DbInit.cs" />
       <Compile Remove="Migrations\IdentityServerGrants\20191119164007_DbInit.Designer.cs" />
       <Compile Remove="Migrations\IdentityServerGrants\20201030101834_UpdateIdentityServerToVersion4.cs" />

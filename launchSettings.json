@@ -4,7 +4,7 @@
       "commandName": "DockerCompose",
       "commandVersion": "1.0",
       "serviceActions": {
-        "db": "StartWithoutDebugging",
+        "dbskoruba": "StartWithoutDebugging",
         "fluxys.puma.identityprovider.admin": "StartWithoutDebugging",
         "fluxys.puma.identityprovider.admin.api": "StartWithoutDebugging",
         "fluxys.puma.identityprovider.sts.identity": "StartDebugging",
